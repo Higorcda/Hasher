@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hasher APP</title>
+
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    {{#if failure}} <div id="system_failure"><p>{{failure}}</p></div> {{/if}}
+
+    <section id="hasher">
+        <main id="hasher__main">
+
+            <div id="hasher__main-generate">
+                <form action="/hasher/generate" method="post">
+
+                    {{#if errors}}
+                        {{#each errors}}
+
+                            <div id="hasher__main-generate__form-failure">
+                                <div id="hasher__main-generate__form-failure__center"><p>{{this}}</p></div>
+                            </div>
+
+                        {{/each}}
+                    {{/if}}
+
+                    <div id="hasher__main-generate__form-main">
+
+                        <input type="text" name="content" placeholder="Content...">
+
+                        <select name="hash_type" id="hash_type_id"><option value="hash_type">Hash Type</option>
+                        </select>
+
+                        <button type="submit"><i class="fa-solid fa-angles-right"></i>Generate Hash</button>
+
+                    </div>
+
+                </form>
+            </div>
+
+            {{#if hashed_content}} <div id="hasher__main-result"><div id="hasher__main-result__center"><p>{{hashed_content}}</p></div></div> {{/if}}
+
+        </main>
+    </section>
+    
+    <script type="text/javascript" src="/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root 
+{
+
+    --main-color      : #6914fb;
+    --dark-main-color : #4b0db8;
+
+    --text-color      : #f5f5f5;
+
+    --f-dark          : #020202;
+    --s-dark          : #121212;
+
+    --failure         : #f45f5f;
+
+}
+
+* 
+{
+
+    margin      :                   0px;
+    padding     :                   0px;
+    font-family : 'Poppins', sans-serif;
+    box-sizing  :            border-box;
+
+}
+
+body { background-color: var(--f-dark); }
+
+section#hasher 
+{
+
+    display         :      flex;
+    justify-content :    center;
+    align-items     :    center;
+    margin          : 100px 0px;
+
+}
+
+section#hasher main#hasher__main 
+{
+
+    background-color :             var(--s-dark);
+    box-shadow       : 0px 0px 3px var(--s-dark);
+    border-radius    :                       3px;
+    padding          :                      25px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-failure 
+{
+
+    display         :   flex;
+    justify-content : center;
+    margin-bottom   :   40px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-failure div#hasher__main-generate__form-failure__center 
+{
+
+    padding          :                  10px 20px;
+    width            :                      280px;
+    background-color :   rgba(244, 95, 95, 0.6);
+    box-shadow       : 0px 0px 3px var(--failure);
+    border-radius    :                        3px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-failure div#hasher__main-generate__form-failure__center p 
+{
+
+    font-size  :               9pt;
+    color      : var(--text-color);
+    text-align :            center;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main
+{
+
+    display : flex;
+    gap     : 30px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main input,
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main select,
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main button 
+{
+
+    outline   :              none;
+    border    :              none;
+    height    :              40px;
+    font-size :               9pt;
+    color     : var(--text-color);
+    opacity   :               0.8;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main input, 
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main select 
+{
+
+    background-color :             var(--f-dark);
+    box-shadow       : 0px 0px 3px var(--f-dark);
+    border-radius    :                       3px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main input 
+{
+
+    padding-left :  10px;
+    width        : 300px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main select 
+{
+
+    padding-left :    10px;
+    width        :   150px;
+    cursor       : pointer;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main button 
+{
+
+    padding          :                      0px 16px;
+    background-color :             var(--main-color);
+    box-shadow       : 0px 0px 3px var(--main-color);
+    border-radius    :                         200px;
+    cursor           :                       pointer;
+    transition       :                          0.6s;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main button i 
+{
+
+    margin-right : 8px;
+    opacity      : 0.6;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-generate form div#hasher__main-generate__form-main button:hover 
+{
+
+    background-color :             var(--dark-main-color);
+    box-shadow       : 0px 0px 3px var(--dark-main-color);
+
+}
+
+section#hasher main#hasher__main div#hasher__main-result 
+{
+
+    display         :   flex;
+    justify-content : center;
+    margin-top      :   50px;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-result div#hasher__main-result__center 
+{
+
+    padding          :                 15px 25px;
+    width            :                     500px;
+    background-color :             var(--f-dark);
+    box-shadow       : 0px 0px 3px var(--f-dark);
+    border-radius    :                       3px;
+    word-wrap        :                break-word;
+
+}
+
+section#hasher main#hasher__main div#hasher__main-result div#hasher__main-result__center p 
+{
+
+    font-size  :               9pt;
+    color      : var(--text-color);
+    opacity    :               0.8;
+    text-align :            center;
+
+}
+
+div#system_failure 
+{ 
+    
+    padding          :                  10px 50px; 
+    background-color :   rgba(244, 95, 95, 0.6);
+    box-shadow       : 0px 0px 3px var(--failure);
+
+}
+
+div#system_failure p 
+{
+
+    font-size  :               9pt;
+    color      : var(--text-color);
+    text-align :            center;
+
+}
